@@ -281,4 +281,42 @@ header .menu {
 }
 .logo p span {
   font-weight: bold;
+}
+
+.left-card {
+  color: #fff;
+  max-width: 695px;
+}
+.left-card h1 {
+  font-weight: bold;
+  font-weight: 600;
+  font-size: 7rem;
+  line-height: 100%;
+  letter-spacing: -4px;
+}
+.left-card h1:nth-child(1) {
+  background: linear-gradient(263.24deg, #9130f4 21.05%, #4646f9 77.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.left-card p {
+  margin-top: 4rem;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+}
+.left-card .button img {
+  margin-top: 3rem;
+}
+
+.right-card img {
+  margin-left: 50px;
+}
+
+.info-card img {
+  margin-top: 4rem;
+  width: 100%;
+  height: 6rem;
 }/*# sourceMappingURL=styles.css.map */
