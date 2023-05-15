@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color:#4646f9;
+  font-size: 1.6rem;
+  background-image: url("../../assets/img/bg2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
