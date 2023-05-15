@@ -256,4 +256,29 @@ h1 {
   text-align: justify;
   max-width: 250px;
   margin-top: 20px;
+}
+
+header {
+  padding: 3rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+header .menu {
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.logo p {
+  color: #fff;
+  font-size: 2.2rem;
+}
+.logo p span {
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */
