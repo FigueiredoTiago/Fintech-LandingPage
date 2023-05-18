@@ -286,7 +286,6 @@ header .menu {
 
 .left-card {
   color: #fff;
-  max-width: 695px;
 }
 .left-card h1 {
   font-weight: bold;
@@ -302,18 +301,46 @@ header .menu {
   background-clip: text;
 }
 .left-card p {
-  margin-top: 4rem;
   font-weight: 500;
   font-size: 2.2rem;
   line-height: 130%;
   letter-spacing: 0.04em;
+  padding-bottom: 1rem;
 }
-.left-card .button img {
-  margin-top: 5rem;
+@media screen and (max-width: 760px) {
+  .left-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .left-card p {
+    display: none;
+  }
+  .left-card .tittle {
+    margin-bottom: 4rem;
+  }
+  .left-card h1 {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .right-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .right-card img {
+  width: 100%;
   margin-left: 50px;
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  .right-card img {
+    margin-left: 0px;
+  }
 }
 
 .intro-container {
@@ -321,6 +348,11 @@ header .menu {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 760px) {
+  .intro-container {
+    flex-direction: column-reverse;
+  }
 }
 
 .info-card img {

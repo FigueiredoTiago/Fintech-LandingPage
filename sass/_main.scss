@@ -1,6 +1,5 @@
 .left-card {
   color: #fff;
-  max-width: 695px;
 
   h1 {
     font-weight: bold;
@@ -18,20 +17,47 @@
   }
 
   p {
-    margin-top: 4rem;
     font-weight: 500;
     font-size: 2.2rem;
     line-height: 130%;
     letter-spacing: 0.04em;
+    padding-bottom: 1rem;
   }
 
-  .button img {
-    margin-top: 5rem;
+  @include device("s") {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      display: none;
+    }
+
+    .tittle {
+      margin-bottom: 4rem;
+    }
+
+    h1 {
+      white-space: nowrap;
+    }
+  }
+}
+
+.right-card {
+  @include device("s") {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .right-card img {
+  width: 100%;
   margin-left: 50px;
+  @include device("m") {
+    margin-left: 0px;
+  }
 }
 
 .intro-container {
@@ -39,6 +65,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include device("s") {
+    flex-direction: column-reverse;
+  }
 }
 
 .info-card {
